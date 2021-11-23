@@ -2,6 +2,7 @@ from typing import List
 
 
 class Solution:
+    # 풀이 1. 모든 조합 탐색
     def letterCombinations(self, digits: str) -> List[str]:
         def dfs(index, path):
             # 끝까지 탐색하면 백트래킹

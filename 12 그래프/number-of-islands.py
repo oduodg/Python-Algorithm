@@ -2,6 +2,7 @@ from typing import List
 
 
 class Solution:
+    # 풀이 1. DFS로 그래프 탐색
     def numIslands(self, grid: List[List[str]]) -> int:
         def dfs(i, j):  # i는 행, j는 열
             # 더 이상 땅이 아닌 경우 종료
