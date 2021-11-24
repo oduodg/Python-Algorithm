@@ -2,6 +2,7 @@ from typing import List
 
 
 class Solution:
+    # 풀이 1. 트리의 모든 DFS 결과
     def subsets(self, nums: List[int]) -> List[List[int]]:
         result = []
 
