@@ -1,7 +1,7 @@
 # 백준 2606번
 import collections
 import sys
-input = sys.stdin.readline # 입출력 가속
+input = sys.stdin.readline # 입력 가속
 
 # 입력받기 -> n: 컴퓨터의 수, pair: 직접 연결된 컴퓨터 쌍의 수
 n = int(input())

@@ -1,7 +1,7 @@
 # 백준 2667번
 from sys import stdin
 
-input = stdin.readline # 입출력 가속
+input = stdin.readline # 입력 가속
 
 # 입력받기 -> N: 지도(정사각형)의 크기
 N = int(input())
