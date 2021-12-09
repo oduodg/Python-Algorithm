@@ -1,11 +1,11 @@
+# 백준 2667번
 from sys import stdin
 
 input = stdin.readline # 입출력 가속
 
 # 입력받기 -> N: 지도(정사각형)의 크기
 N = int(input())
-graph = [list(input()) for _ in range(N)] # 그래프 생성 # rstrip
-
+graph = [list(input().rstrip()) for _ in range(N)] # 그래프 생성, rstrip(): \n 제거
 
 def dfs(i, j):
     global apt
