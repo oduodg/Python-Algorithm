@@ -82,7 +82,7 @@ print(list(zip(num, fruit, color)))
 쉬움.
 
 > 알고리즘
-> 
+
 - left부터 right까지 for문으로 돌면서
 - 기본으로 cnt(약수의 개수) = 2 로 초기화했다.(1과 자기 자신)
 - 예외) 숫자가 1인 경우는 cnt = 1
@@ -98,7 +98,7 @@ print(list(zip(num, fruit, color)))
 - sum(answer)로 리스트의 모든 요소의 합을 리턴.
 
 > 다른 아이디어
-> 
+ 
 
 제곱수의 약수는 홀수개, 제곱수가 아닌 수의 약수는 짝수개인 것을 이용
 
@@ -115,3 +115,39 @@ def solution(left, right):
 ```
 
 시간 복잡도도 O(n)이고 1에 대한 예외 케이스도 생각하지 않아도 된다.
+
+---
+
+## [3진법 뒤집기](https://programmers.co.kr/learn/courses/30/lessons/68935)
+
+> 알고리즘
+
+- n이 1, 2인 경우는 예외 케이스
+- n 이 1이 아닐 때까지 while문으로
+    - n을 3으로 나눈 나머지를 str형태로 num 배열에 추가
+    - n은 n을 3으로 나눈 몫으로 초기화
+- while문 종료 후 ‘1’을 num 배열에 추가
+- reverse 해준 뒤, 3진법으로 계산하는 방식 사용
+
+→ 시간 초과
+
+> 다른 아이디어
+
+파이썬 내장함수 int()는 진법 변환이 지원됨!!!
+
+사용법: `int(숫자, n)` (n은 n진법의 n에 해당한다.)
+
+`divmod()` 를 사용하여 몫과 나머지를 동시에 구하고 몫은 n으로 rest는 배열에 더해준다.
+
+```python
+def solution2(n):
+    answer = ''
+
+    while n >= 1:
+        n, rest = divmod(n, 3) # n을 3으로 나눈 몫(n)과 나머지(rest)
+        answer += str(rest)
+    
+    answer = int(answer, 3) # answer를 3진법으로 변환(python의 int함수는 진법 변환을 지원한다.)
+
+    return answer
+```
