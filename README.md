@@ -9,3 +9,8 @@
     <a href="https://programmers.co.kr/"> <img src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1621451894/noticon/wbx6sz7ouccpnmbmvf3k.png" width="20%">
     <a href="https://solved.ac/"><img src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1613401545/noticon/wqon5slaxcrs0omqqgk0.png" width="20%">
 </p>
+
+2021.12.25 기준\n
+프로그래머스: 26 solved\n
+백준: 77 solved
+total: 103 solved
