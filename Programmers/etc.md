@@ -293,3 +293,13 @@ def solution2(n):
 
 - n을 str타입의 리스트로 변환시킨다.
 - `map()` 함수를 이용해 각 요소를 int 타입으로 다시 변환한 뒤, sum() 함수를 이용해 합을 리턴
+
+---
+
+## [문자열을 정수로 바꾸기](https://programmers.co.kr/learn/courses/30/lessons/12925)
+
+매우 쉬움
+
+> 알고리즘
+
+- int 타입으로 변환한 s를 리턴
