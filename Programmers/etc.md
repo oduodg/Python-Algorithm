@@ -238,3 +238,25 @@ def solution2(n):
 
 - a > b 인 경우, a와 b를 swap한다. `a, b = b, a`
 - sum함수 내에 range함수를 이용해 리턴한다. `sum(range(a, b+1))`
+
+---
+
+## [나누어 떨어지는 숫자 배열](https://programmers.co.kr/learn/courses/30/lessons/12910)
+
+매우 쉬움
+
+> 알고리즘
+ 
+- for문을 이용하여, arr에 들어있는 숫자 num이 divisor로 나눈 나머지가 0이면 answer에 num을 추가한다.
+- answer이 빈 리스트이면 [-1]을 리턴
+- 아니면, answer를 오름차순으로 정렬(`sorted()`)하여 리턴
+
+> 다른 아이디어
+
+- return 값으로 한 줄에 구현(리스트 컴프리헨션)
+
+    → sorted([n for n in arr if n % divisor == 0]) or [-1]
+
+- return에 or를 사용할 수 있다.
+
+    → or 앞의 구문이 거짓이면 or 뒷부분 실행
