@@ -183,3 +183,17 @@ def solution2(n):
 > 알고리즘
 
 - 0~9까지의 합을 total에 저장하고, total에서 numbers의 합을 뺀 값을 리턴한다.
+
+---
+
+## [문자열 다루기 기본](https://programmers.co.kr/learn/courses/30/lessons/12918?language=python3)
+
+매우 쉬움
+
+> 알고리즘
+
+- if: 문자열의 길이가 4와 6이 아닐 때, False 리턴
+    
+    → and 조건으로 연결해야 함(or 아님 주의)
+    
+- else: `.isdigit()` 을 사용하여, True or False 판별 후 리턴
