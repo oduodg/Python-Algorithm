@@ -173,3 +173,13 @@ def solution2(n):
 > 알고리즘
 
 - 가장 작은 자연수를 찾는 것이므로 1부터 n까지 for문으로 반복하면서, 나머지가 1인 경우 바로 x를 리턴한다.
+
+---
+
+## [없는 숫자 더하기](https://programmers.co.kr/learn/courses/30/lessons/86051)
+
+매우 쉬움
+
+> 알고리즘
+
+- 0~9까지의 합을 total에 저장하고, total에서 numbers의 합을 뺀 값을 리턴한다.
