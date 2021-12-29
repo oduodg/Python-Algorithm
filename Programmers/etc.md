@@ -260,3 +260,14 @@ def solution2(n):
 - return에 or를 사용할 수 있다.
 
     → or 앞의 구문이 거짓이면 or 뒷부분 실행
+
+---
+
+## [약수의 합](https://programmers.co.kr/learn/courses/30/lessons/12928)
+
+매우 쉬움
+
+> 알고리즘
+
+- 리스트 컴프리헨션을 이용하여 return에 한 줄로 구현
+- 1부터 n까지의 수 중 num으로 나누었을 때 나머지가 0인 수를 sum()하여 리턴
