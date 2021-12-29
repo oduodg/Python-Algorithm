@@ -271,3 +271,14 @@ def solution2(n):
 
 - 리스트 컴프리헨션을 이용하여 return에 한 줄로 구현
 - 1부터 n까지의 수 중 num으로 나누었을 때 나머지가 0인 수를 sum()하여 리턴
+
+---
+
+## [수박수박수박수박수박수?](https://programmers.co.kr/learn/courses/30/lessons/12922?language=python3)
+
+매우 쉬움
+
+> 알고리즘
+
+- n이 짝수이면 “수박” * (n을 2로 나눈 몫)을 리턴
+- n이 홀수이면 “수박” * (n을 2로 나눈 몫) + “수” 를 리턴
