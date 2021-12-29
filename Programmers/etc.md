@@ -197,3 +197,14 @@ def solution2(n):
     → and 조건으로 연결해야 함(or 아님 주의)
     
 - else: `.isdigit()` 을 사용하여, True or False 판별 후 리턴
+
+---
+
+## [문자열 내 p와 y의 개수](https://programmers.co.kr/learn/courses/30/lessons/12916?language=python3)
+
+매우 쉬움
+
+> 알고리즘
+
+- `.islower()` 를 사용하여 문자열 s를 모두 소문자로 변환한다.
+- `.count('알파벳')` 를 사용하여 ‘p’와 ‘y’의 개수가 같으면 True를 리턴
