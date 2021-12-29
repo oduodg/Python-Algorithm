@@ -163,3 +163,13 @@ def solution2(n):
 - 정수 배열의 길이만큼 for문을 돌면서
 - 부호 배열의 요소가 True이면 answer에 더하고, False이면 빼기
 - answer를 리턴
+
+---
+
+## [나머지가 1이 되는 수 찾기](https://programmers.co.kr/learn/courses/30/lessons/87389)
+
+매우 쉬움
+
+> 알고리즘
+
+- 가장 작은 자연수를 찾는 것이므로 1부터 n까지 for문으로 반복하면서, 나머지가 1인 경우 바로 x를 리턴한다.
