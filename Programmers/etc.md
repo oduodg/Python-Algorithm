@@ -303,3 +303,24 @@ def solution2(n):
 > 알고리즘
 
 - int 타입으로 변환한 s를 리턴
+
+---
+
+## [이상한 문자 만들기](https://programmers.co.kr/learn/courses/30/lessons/12930)
+
+쉬움
+
+> 알고리즘
+
+- s를 list 타입으로 변환하여 저장한다.
+    
+    → 이유: 문자열(string)은 수정 불가능한 자료구조이기 때문에, 인덱스로 접근하여 수정할 수 없다. 
+    
+    TypeError: 'str' object does not support item assignment
+    
+- 단어(공백을 기준)별로 짝/홀수 인덱스를 판단해야하므로 cnt 변수를 선언하고 0으로 초기화한다.
+- s의 길이만큼 for문을 돌면서 `.isalpha()` 를 사용하여 문자이면
+    - if: cnt를 2로 나눈 나머지가 0이면 (짝수 인덱스) `.upper()` 를 사용하여 대문자로 변환하고, cnt += 1
+    - else: (홀수 인덱스) `.lower()` 를 사용하여 소문자로 변환하고, cnt += 1
+- 공백문자인 경우에는 cnt를 0으로 다시 초기화한다.
+- `.join()` 을 사용하여 list 타입의 s를 다시 문자열로 만들어 붙이고 리턴한다.
