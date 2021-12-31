@@ -326,7 +326,7 @@ def solution2(n):
 - `.join()` 을 사용하여 list 타입의 s를 다시 문자열로 만들어 붙이고 리턴한다.
 
 ---
-## 소수 찾기
+## [소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/12921)
 
 쉽지만 시간 초과를 해결하기 위해 조금 생각해야할 부분이 있음.
 
@@ -342,3 +342,23 @@ def solution2(n):
 - count한 값을 리턴
 
 → 위 알고리즘을 set(부분집합을 제외하는 것)을 이용하여 구현하면 더욱 빠르다.
+
+---
+
+## [자연수 뒤집어 배열로 만들기](https://programmers.co.kr/learn/courses/30/lessons/12932)
+
+쉽다.
+
+> 알고리즘
+
+- str형태로 만들어 list로 저장한다.
+- `.reverse()` 함수를 이용해 뒤집는다.
+- `map()` 을 이용해 리스트의 요소를 int 타입으로 변환하고 리턴한다.
+
+```python
+def solution(n):
+    return list(map(int, reversed(str(n))))
+```
+reversed() 사용하여 풀이
+
+→ 헷갈린 것: sorted 함수의 reverse는 내림차순 정렬이고 뒤집으려면 reverse나 reversed 함수만 사용해야 한다.
