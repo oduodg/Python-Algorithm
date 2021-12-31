@@ -382,3 +382,21 @@ reversed() 사용하여 풀이
 딕셔너리와 `replace()` 함수를 사용한다.
 
 `replace(교체할 값, 교체될 값)`
+
+---
+
+## [행렬의 덧셈](https://programmers.co.kr/learn/courses/30/lessons/12950?language=python3#)
+
+쉽지만 시간 복잡도를 생각하면 zip을 사용하기
+
+> 알고리즘
+ 
+- 이중 for문을 사용하여 arr1과 arr2의 각 요소에 접근하여 더해준다.
+- 한 행의 결과값을 빈 리스트인 temp에 저장하고, temp를 answer에 추가한다.
+- answer를 리스트 타입으로 변환하여 리턴.
+
+> 다른 아이디어
+
+`zip()` 사용
+
+zip()을 두 번 사용해서 리스트 컴프리헨션을 중첩하여 구현한다.
