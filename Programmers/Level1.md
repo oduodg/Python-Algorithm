@@ -362,3 +362,23 @@ def solution(n):
 reversed() 사용하여 풀이
 
 → 헷갈린 것: sorted 함수의 reverse는 내림차순 정렬이고 뒤집으려면 reverse나 reversed 함수만 사용해야 한다.
+
+---
+
+## [숫자 문자열과 영단어](https://programmers.co.kr/learn/courses/30/lessons/81301?language=python3)
+
+쉽다.
+
+> 알고리즘
+
+- key는 숫자를 나타내는 영단어, value는 숫자인 딕셔너리를 생성한다.
+- s의 길이만큼 for문을 돌려서, s의 각 요소가 알파벳이면 word에 추가한다.
+- 딕셔너리의 키에 word가 존재하면 answer에 해당하는 그 value값을 str타입으로 변환하여(word를 빈 문자열로 선언했기 때문에 문자열만을더해줄 수 있다.) 추가한다.
+- s의 요소가 숫자이면 answer에 str 타입으로 변환하여 추가한다.
+- answer를 int 타입으로 변환하여 리턴한다.
+
+> 다른 아이디어
+
+딕셔너리와 `replace()` 함수를 사용한다.
+
+`replace(교체할 값, 교체될 값)`
