@@ -3,5 +3,5 @@ input = sys.stdin.readline
 
 N, M = map(int, input().split())
 
-for i in itertools.product(range(1, N+1), repeat = M):
+for i in itertools.product(range(1, N+1), repeat = M): # 중복순열
     print(*i)
