@@ -10,7 +10,6 @@ for _ in range(t):
             clothes[type] = 2
         else:
             clothes[type] += 1
-    print(clothes)
     answer = 1
     for key, value in clothes.items():
         answer *= value
