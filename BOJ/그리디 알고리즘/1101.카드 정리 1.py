@@ -1,5 +1,4 @@
-from operator import not_
-import sys, heapq
+import sys
 input = sys.stdin.readline
 
 n, m = map(int, input().split()) # 박스의 개수 n, 카드 색상의 개수 m
