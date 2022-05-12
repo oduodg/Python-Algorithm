@@ -22,7 +22,7 @@ while left < n and right < n:
 
     else:
         cnt += 1
-        if left == n-1:  # 끝에 도달했을 때 종
+        if left == n-1:  # 끝에 도달했을 때 종료
             break
         left += 1
         right = left
